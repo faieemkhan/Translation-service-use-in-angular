@@ -1,0 +1,11 @@
+<h1>{{ name }}</h1>
+<hr>
+<label>{{'banner.change_lang_label' | translate}}:</label>
+
+
+<select name="language" [(ngModel)]='language' (ngModelChange)="onSelect($event)">
+  <option value="en-US">English</option>
+  <option value="fr-FR">French</option>
+  <option value="hi-IN">Hindi (Indian)</option>
+</select>
+<router-outlet></router-outlet>
